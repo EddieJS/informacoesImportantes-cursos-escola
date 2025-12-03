@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações dos Cursos - CBB</title>
+    <title>Informações dos Cursos - Colégio XYZ</title>
     
-    <link rel="icon" type="image/png" href="logo_cbb_favicon.png"> 
+    <link rel="icon" type="image/png" href="favicon.png"> 
 
     <style>
         body {
@@ -174,7 +174,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Logo da Escola" class="logo">
+        <img src="logo-escola.png" alt="Logo da Escola" class="logo">
         <h1>Informações Importantes dos Cursos</h1>
 
         <button class="accordion">Educação Infantil</button>
@@ -217,7 +217,6 @@
                 <p><strong>Download de Arquivos de Orientação (Educação Infantil):</strong></p>
                 <ul>
                     <li><a href="[LINK_PDF_MATERNAL_I]" target="_blank">Maternal I - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_MATERNAL_I]" target="_blank">Maternal II - Clique para baixar o PDF</a></li>
                     <li><a href="[LINK_PDF_INFANTIL_I]" target="_blank">Infantil I - Clique para baixar o PDF</a></li>
                     <li><a href="[LINK_PDF_INFANTIL_II]" target="_blank">Infantil II - Clique para baixar o PDF</a></li>
                 </ul>
@@ -396,6 +395,42 @@
             </div>
             <a href="timeline.html" class="timeline-button">Linha do Tempo</a>
         </div>
+        
+        <button class="accordion">CBL</button>
+        <div class="panel">
+            <div class="tab-container">
+                <div class="tab-button active" onclick="openTab(event, 'cbl-calendario')">Calendário de Eventos</div>
+                <div class="tab-button" onclick="openTab(event, 'cbl-acervo')">Informações Sobre Materiais</div>
+                <div class="tab-button" onclick="openTab(event, 'cbl-regras')">Regras e Políticas</div>
+            </div>
+
+            <div id="cbl-calendario" class="tab-content active">
+                <p><strong>Eventos:</strong></p>
+                <ul>
+                    <li>Feira do Livro 2026: [Data]</li>
+                    <li>Clube de Leitura: Reuniões mensais - [Link para Agenda]</li>
+                    <li>Horário: [Datas]</li>
+                </ul>
+            </div>
+            <div id="cbl-acervo" class="tab-content">
+                <p><strong>Informações Sobre o Material:</strong></p>
+                <ul>
+                    <li><a href="[LINK_PDF_LISTA_NOVAS_AQUISIÇÕES]" target="_blank">Lista de Novas Aquisições (Mês) - Clique para baixar o PDF</a></li>
+                    <li>Links de Acesso: <a href="[LINK_FORMULARIO_SUGESTOES]" target="_blank">Preencher Formulário Online</a></li>
+                </ul>
+            </div>
+            <div id="cbl-regras" class="tab-content">
+                <p><strong>Regras e Políticas do CBL:</strong></p>
+                <ul>
+                    <li><a href="[LINK_PDF_POLITICAS_USO]" target="_blank">Política de Uso da Biblioteca (Empréstimos, Multas) - Clique para baixar o PDF</a></li>
+                    <li><a href="[LINK_PDF_REGULAMENTO_CBL]" target="_blank">Regulamento Interno do Conselho - Clique para baixar o PDF</a></li>
+                </ul>
+            </div>
+            
+            <a href="timeline.html" class="timeline-button">Linha do Tempo Escolar Geral</a>
+        </div>
+        
+        
     </div>
 
     <script>
@@ -429,6 +464,3 @@
     </script>
 </body>
 </html>
-
-
-
