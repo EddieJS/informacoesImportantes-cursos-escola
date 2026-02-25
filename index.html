@@ -61,7 +61,7 @@
             background-color: white;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.2s ease-out;
+            transition: max-height 0.3s ease-out; /* Suavizada a transição */
             border: 1px solid #ddd;
             border-top: none;
             border-radius: 0 0 5px 5px;
@@ -131,6 +131,18 @@
             border-radius: 5px;
             text-align: center;
             margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* NOVA CLASSE PARA TEXTOS LONGOS E DIRETRIZES */
+        .texto-longo {
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+        }
+        .texto-longo h3 {
+            color: #0056b3;
+            margin-top: 20px;
         }
 
         /* MEDIA QUERY PARA TELAS PEQUENAS (SMARTPHONES) */
@@ -180,22 +192,86 @@
         <button class="accordion">Educação Infantil</button>
         <div class="panel">
             <div class="tab-container">
-                <div class="tab-button active" onclick="openTab(event, 'ei-diretris')">Diretriz</div>
+                <div class="tab-button active" onclick="openTab(event, 'ei-diretriz')">Diretriz</div>
                 <div class="tab-button" onclick="openTab(event, 'ei-va')">VA</div>
                 <div class="tab-button" onclick="openTab(event, 'ei-prova')">Prova</div>
                 <div class="tab-button" onclick="openTab(event, 'ei-recuperacao')">Recuperação</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-art')">ART</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-final')">Recuperação Final</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-laudos')">Laudos</div>
+                <div class="tab-button" onclick="openTab(event, 'ei-arquivos')">Arquivos</div>
+                <div class="tab-button" onclick="openTab(event, 'ei-saidas')">Saídas</div>
             </div>
-            <div id="ei-calendario" class="tab-content active">
-                <p><strong>Guia Pedagógico aos Professores - 2026</strong></p>
-                <ul>
-                    <li>Documento orientador de práticas pedagógicas para 2026</li>
-                    <li>Recesso de meio de ano: [Data]</li>
-                    <li>Fim do ano letivo: [Data]</li>
-                </ul>
+            
+            <div id="ei-diretriz" class="tab-content active">
+                <div class="texto-longo">
+                    [cite_start]<h3>Guia Pedagógico aos Professores – 2026 [cite: 1]</h3>
+[cite_start]<p><strong>Documento orientador de práticas pedagógicas [cite: 2]</strong></p>
+
+[cite_start]<h4>Apresentação [cite: 3]</h4>
+[cite_start]<p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais. [cite: 4]</p>
+<p>Este documento não substitui o regimento escolar. [cite_start]Ele o complementa no cotidiano pedagógico. [cite: 5]</p>
+
+<h4>1. [cite_start]Princípios do trabalho pedagógico em 2026 [cite: 6]</h4>
+<ul>
+    [cite_start]<li>Clareza de critérios e expectativas. [cite: 7]</li>
+    [cite_start]<li>Coerência entre planejamento, avaliação e devolutiva ao aluno. [cite: 8]</li>
+    [cite_start]<li>Registro pedagógico como parte do trabalho docente. [cite: 9]</li>
+    [cite_start]<li>Atuação conjunta entre professores e coordenação. [cite: 10]</li>
+</ul>
+
+<h4>2. [cite_start]Avaliação da aprendizagem [cite: 11]</h4>
+[cite_start]<p><strong>Instrumentos avaliativos [cite: 12]</strong></p>
+<ul>
+    [cite_start]<li>Utilização de instrumentos diversificados ao longo do trimestre. [cite: 13]</li>
+    [cite_start]<li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento. [cite: 14]</li>
+    [cite_start]<li>Comunicação prévia aos alunos sobre critérios e formatos. [cite: 15]</li>
+</ul>
+[cite_start]<p><strong>Critérios de correção [cite: 16]</strong></p>
+<ul>
+    [cite_start]<li>Correção baseada nos objetivos de aprendizagem. [cite: 17]</li>
+    [cite_start]<li>Devolutivas claras, indicando avanços e aspectos a desenvolver. [cite: 18]</li>
+    [cite_start]<li>Coerência entre desempenho apresentado e resultado atribuído. [cite: 19]</li>
+</ul>
+
+<h4>3. [cite_start]Recuperação da aprendizagem [cite: 20]</h4>
+<ul>
+    [cite_start]<li>A recuperação deve ocorrer de forma contínua ao longo do trimestre. [cite: 21]</li>
+    [cite_start]<li>As estratégias de recuperação devem ser planejadas e registradas. [cite: 22]</li>
+    [cite_start]<li>A recuperação não se limita a um momento final, mas integra o processo de ensino. [cite: 23]</li>
+</ul>
+
+<h4>4. [cite_start]Pareceres e registros pedagógicos [cite: 24]</h4>
+<ul>
+    [cite_start]<li>Linguagem objetiva, clara e pedagógica. [cite: 25]</li>
+    [cite_start]<li>Coerência entre registros, acompanhamento realizado e parecer final. [cite: 26]</li>
+    [cite_start]<li>Registro das ações de recuperação e orientações dadas ao aluno. [cite: 27]</li>
+</ul>
+
+<h4>5. [cite_start]Gestão de sala de aula [cite: 28]</h4>
+<ul>
+    [cite_start]<li>Organização do ambiente de aprendizagem. [cite: 29]</li>
+    [cite_start]<li>Estabelecimento de combinados claros com os alunos. [cite: 30]</li>
+    [cite_start]<li>Intervenções diante de resistência, falta de foco ou descumprimento de regras. [cite: 31]</li>
+    [cite_start]<li>Acionamento da Orientação sempre que necessário. [cite: 32]</li>
+</ul>
+
+<h4>6. [cite_start]Inclusão e atendimento a alunos com dificuldades de aprendizagem [cite: 33]</h4>
+<ul>
+    [cite_start]<li>Planejamento antecipado de adaptações pedagógicas. [cite: 34]</li>
+    [cite_start]<li>Provas e atividades adaptadas conforme as necessidades do aluno. [cite: 35]</li>
+    [cite_start]<li>Comunicação constante com a coordenação sobre o acompanhamento realizado. [cite: 36]</li>
+</ul>
+
+<h4>7. [cite_start]Trabalho em equipe [cite: 37]</h4>
+<ul>
+    [cite_start]<li>Participação nos momentos de alinhamento pedagógico. [cite: 38]</li>
+    [cite_start]<li>Compartilhamento de práticas e estratégias. [cite: 39]</li>
+    [cite_start]<li>Compromisso com as decisões institucionais. [cite: 40]</li>
+</ul>
+
+[cite_start]<h4>Considerações finais [cite: 41]</h4>
+[cite_start]<p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias. [cite: 42]</p>
+                    </div>
             </div>
+
             <div id="ei-va" class="tab-content">
                 <p><strong>Diretrizes sobre VA - Educação Infantil:</strong></p>
                 <ul>
@@ -214,19 +290,17 @@
                     <li>[Regras e procedimentos para recuperação]</li>
                 </ul>
             </div>
-            <div id="ei-serie" class="tab-content">
-                <p><strong>Download de Arquivos de Orientação (Educação Infantil):</strong></p>
+            <div id="ei-arquivos" class="tab-content">
+                <p><strong>Download de Arquivos de Orientação:</strong></p>
                 <ul>
-                    <li><a href="[LINK_PDF_MATERNAL_I]" target="_blank">Maternal I - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_INFANTIL_I]" target="_blank">Infantil I - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_INFANTIL_II]" target="_blank">Infantil II - Clique para baixar o PDF</a></li>
+                    <li><a href="[LINK]" target="_blank">Maternal I - Baixar PDF</a></li>
+                    <li><a href="[LINK]" target="_blank">Infantil I - Baixar PDF</a></li>
                 </ul>
             </div>
-            <div id="ei-saida" class="tab-content">
-                <p><strong>Informações para Saídas Pedagógicas - Educação Infantil:</strong></p>
+            <div id="ei-saidas" class="tab-content">
+                <p><strong>Saídas Pedagógicas:</strong></p>
                 <ul>
-                    <li><a href="[LINK_PDF_FAZENDINHA]" target="_blank">Visita à Fazendinha (Abril) - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_TEATRO]" target="_blank">Passeio ao Teatro Municipal (Junho) - Clique para baixar o PDF</a></li>
+                    <li><a href="[LINK]" target="_blank">Visita à Fazendinha (Abril)</a></li>
                 </ul>
             </div>
             <a href="timeline.html" class="timeline-button">Linha do Tempo</a>
@@ -235,56 +309,105 @@
         <button class="accordion">Ensino Fundamental Anos Iniciais</button>
         <div class="panel">
             <div class="tab-container">
-                <div class="tab-button active" onclick="openTab(event, 'ei-calendario')">Diretrizes 2026</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-va')">VA</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-prova')">Prova</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-recuperacao')">Recuperação</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-art')">ART</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-final')">Recuperação Final</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-laudos')">Laudos</div>
+                <div class="tab-button active" onclick="openTab(event, 'ef1-diretriz')">Diretriz</div>
+                <div class="tab-button" onclick="openTab(event, 'ef1-va')">VA</div>
+                <div class="tab-button" onclick="openTab(event, 'ef1-prova')">Prova</div>
+                <div class="tab-button" onclick="openTab(event, 'ef1-recuperacao')">Recuperação</div>
+                <div class="tab-button" onclick="openTab(event, 'ef1-arquivos')">Arquivos</div>
+                <div class="tab-button" onclick="openTab(event, 'ef1-saidas')">Saídas</div>
             </div>
-            <div id="ef1-calendario" class="tab-content active">
-                <p><strong>Calendário Anual - Ensino Fundamental Anos Iniciais:</strong></p>
-                <ul>
-                    <li>Início das aulas: [Data]</li>
-                    <li>Recesso de meio de ano: [Data]</li>
-                    <li>Fim do ano letivo: [Data]</li>
-                </ul>
+            
+            <div id="ef1-diretriz" class="tab-content active">
+                <div class="texto-longo">
+                    [cite_start]<h3>Guia Pedagógico aos Professores – 2026 [cite: 1]</h3>
+[cite_start]<p><strong>Documento orientador de práticas pedagógicas [cite: 2]</strong></p>
+
+[cite_start]<h4>Apresentação [cite: 3]</h4>
+[cite_start]<p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais. [cite: 4]</p>
+<p>Este documento não substitui o regimento escolar. [cite_start]Ele o complementa no cotidiano pedagógico. [cite: 5]</p>
+
+<h4>1. [cite_start]Princípios do trabalho pedagógico em 2026 [cite: 6]</h4>
+<ul>
+    [cite_start]<li>Clareza de critérios e expectativas. [cite: 7]</li>
+    [cite_start]<li>Coerência entre planejamento, avaliação e devolutiva ao aluno. [cite: 8]</li>
+    [cite_start]<li>Registro pedagógico como parte do trabalho docente. [cite: 9]</li>
+    [cite_start]<li>Atuação conjunta entre professores e coordenação. [cite: 10]</li>
+</ul>
+
+<h4>2. [cite_start]Avaliação da aprendizagem [cite: 11]</h4>
+[cite_start]<p><strong>Instrumentos avaliativos [cite: 12]</strong></p>
+<ul>
+    [cite_start]<li>Utilização de instrumentos diversificados ao longo do trimestre. [cite: 13]</li>
+    [cite_start]<li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento. [cite: 14]</li>
+    [cite_start]<li>Comunicação prévia aos alunos sobre critérios e formatos. [cite: 15]</li>
+</ul>
+[cite_start]<p><strong>Critérios de correção [cite: 16]</strong></p>
+<ul>
+    [cite_start]<li>Correção baseada nos objetivos de aprendizagem. [cite: 17]</li>
+    [cite_start]<li>Devolutivas claras, indicando avanços e aspectos a desenvolver. [cite: 18]</li>
+    [cite_start]<li>Coerência entre desempenho apresentado e resultado atribuído. [cite: 19]</li>
+</ul>
+
+<h4>3. [cite_start]Recuperação da aprendizagem [cite: 20]</h4>
+<ul>
+    [cite_start]<li>A recuperação deve ocorrer de forma contínua ao longo do trimestre. [cite: 21]</li>
+    [cite_start]<li>As estratégias de recuperação devem ser planejadas e registradas. [cite: 22]</li>
+    [cite_start]<li>A recuperação não se limita a um momento final, mas integra o processo de ensino. [cite: 23]</li>
+</ul>
+
+<h4>4. [cite_start]Pareceres e registros pedagógicos [cite: 24]</h4>
+<ul>
+    [cite_start]<li>Linguagem objetiva, clara e pedagógica. [cite: 25]</li>
+    [cite_start]<li>Coerência entre registros, acompanhamento realizado e parecer final. [cite: 26]</li>
+    [cite_start]<li>Registro das ações de recuperação e orientações dadas ao aluno. [cite: 27]</li>
+</ul>
+
+<h4>5. [cite_start]Gestão de sala de aula [cite: 28]</h4>
+<ul>
+    [cite_start]<li>Organização do ambiente de aprendizagem. [cite: 29]</li>
+    [cite_start]<li>Estabelecimento de combinados claros com os alunos. [cite: 30]</li>
+    [cite_start]<li>Intervenções diante de resistência, falta de foco ou descumprimento de regras. [cite: 31]</li>
+    [cite_start]<li>Acionamento da Orientação sempre que necessário. [cite: 32]</li>
+</ul>
+
+<h4>6. [cite_start]Inclusão e atendimento a alunos com dificuldades de aprendizagem [cite: 33]</h4>
+<ul>
+    [cite_start]<li>Planejamento antecipado de adaptações pedagógicas. [cite: 34]</li>
+    [cite_start]<li>Provas e atividades adaptadas conforme as necessidades do aluno. [cite: 35]</li>
+    [cite_start]<li>Comunicação constante com a coordenação sobre o acompanhamento realizado. [cite: 36]</li>
+</ul>
+
+<h4>7. [cite_start]Trabalho em equipe [cite: 37]</h4>
+<ul>
+    [cite_start]<li>Participação nos momentos de alinhamento pedagógico. [cite: 38]</li>
+    [cite_start]<li>Compartilhamento de práticas e estratégias. [cite: 39]</li>
+    [cite_start]<li>Compromisso com as decisões institucionais. [cite: 40]</li>
+</ul>
+
+[cite_start]<h4>Considerações finais [cite: 41]</h4>
+[cite_start]<p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias. [cite: 42]</p>
+                    </div>
             </div>
+
             <div id="ef1-va" class="tab-content">
-                <p><strong>Diretrizes sobre VA - Ensino Fundamental Anos Iniciais:</strong></p>
-                <ul>
-                    <li>[Informações sobre a VA]</li>
-                </ul>
+                <p><strong>Diretrizes sobre VA:</strong></p>
+                <ul><li>[Informações sobre a VA]</li></ul>
             </div>
             <div id="ef1-prova" class="tab-content">
-                <p><strong>Diretrizes sobre Prova - Ensino Fundamental Anos Iniciais:</strong></p>
-                <ul>
-                    <li>[Informações sobre provas e avaliações]</li>
-                </ul>
+                <p><strong>Diretrizes sobre Prova:</strong></p>
+                <ul><li>[Informações sobre provas]</li></ul>
             </div>
             <div id="ef1-recuperacao" class="tab-content">
-                <p><strong>Diretrizes sobre Recuperação - Ensino Fundamental Anos Iniciais:</strong></p>
-                <ul>
-                    <li>[Regras e procedimentos para recuperação]</li>
-                </ul>
+                <p><strong>Diretrizes sobre Recuperação:</strong></p>
+                <ul><li>[Regras de recuperação]</li></ul>
             </div>
-            <div id="ef1-serie" class="tab-content">
-                <p><strong>Download de Arquivos de Orientação (Fundamental Anos Iniciais):</strong></p>
-                <ul>
-                    <li><a href="[LINK_PDF_1_ANO]" target="_blank">1º Ano - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_2_ANO]" target="_blank">2º Ano - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_3_ANO]" target="_blank">3º Ano - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_4_ANO]" target="_blank">4º Ano - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_5_ANO]" target="_blank">5º Ano - Clique para baixar o PDF</a></li>
-                </ul>
+            <div id="ef1-arquivos" class="tab-content">
+                <p><strong>Download de Arquivos:</strong></p>
+                <ul><li><a href="[LINK]" target="_blank">1º Ano - Baixar PDF</a></li></ul>
             </div>
-            <div id="ef1-saida" class="tab-content">
-                <p><strong>Informações para Saídas Pedagógicas - Ensino Fundamental Anos Iniciais:</strong></p>
-                <ul>
-                    <li><a href="[LINK_PDF_MUSEU_CIENCIAS]" target="_blank">Passeio ao Museu de Ciências (Maio) - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_JARDIM]" target="_blank">Visita ao Jardim Botânico (Agosto) - Clique para baixar o PDF</a></li>
-                </ul>
+            <div id="ef1-saidas" class="tab-content">
+                <p><strong>Saídas Pedagógicas:</strong></p>
+                <ul><li><a href="[LINK]" target="_blank">Museu de Ciências</a></li></ul>
             </div>
             <a href="timeline.html" class="timeline-button">Linha do Tempo</a>
         </div>
@@ -292,55 +415,105 @@
         <button class="accordion">Ensino Fundamental Anos Finais</button>
         <div class="panel">
             <div class="tab-container">
-                <div class="tab-button active" onclick="openTab(event, 'ei-calendario')">Diretrizes 2026</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-va')">VA</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-prova')">Prova</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-recuperacao')">Recuperação</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-art')">ART</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-final')">Recuperação Final</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-laudos')">Laudos</div>
+                <div class="tab-button active" onclick="openTab(event, 'ef2-diretriz')">Diretriz</div>
+                <div class="tab-button" onclick="openTab(event, 'ef2-va')">VA</div>
+                <div class="tab-button" onclick="openTab(event, 'ef2-prova')">Prova</div>
+                <div class="tab-button" onclick="openTab(event, 'ef2-recuperacao')">Recuperação</div>
+                <div class="tab-button" onclick="openTab(event, 'ef2-arquivos')">Arquivos</div>
+                <div class="tab-button" onclick="openTab(event, 'ef2-saidas')">Saídas</div>
             </div>
-            <div id="ef2-calendario" class="tab-content active">
-                <p><strong>Calendário Anual - Ensino Fundamental Anos Finais:</strong></p>
-                <ul>
-                    <li>Início das aulas: [Data]</li>
-                    <li>Recesso de meio de ano: [Data]</li>
-                    <li>Fim do ano letivo: [Data]</li>
-                </ul>
+            
+            <div id="ef2-diretriz" class="tab-content active">
+                 <div class="texto-longo">
+                    [cite_start]<h3>Guia Pedagógico aos Professores – 2026 [cite: 1]</h3>
+[cite_start]<p><strong>Documento orientador de práticas pedagógicas [cite: 2]</strong></p>
+
+[cite_start]<h4>Apresentação [cite: 3]</h4>
+[cite_start]<p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais. [cite: 4]</p>
+<p>Este documento não substitui o regimento escolar. [cite_start]Ele o complementa no cotidiano pedagógico. [cite: 5]</p>
+
+<h4>1. [cite_start]Princípios do trabalho pedagógico em 2026 [cite: 6]</h4>
+<ul>
+    [cite_start]<li>Clareza de critérios e expectativas. [cite: 7]</li>
+    [cite_start]<li>Coerência entre planejamento, avaliação e devolutiva ao aluno. [cite: 8]</li>
+    [cite_start]<li>Registro pedagógico como parte do trabalho docente. [cite: 9]</li>
+    [cite_start]<li>Atuação conjunta entre professores e coordenação. [cite: 10]</li>
+</ul>
+
+<h4>2. [cite_start]Avaliação da aprendizagem [cite: 11]</h4>
+[cite_start]<p><strong>Instrumentos avaliativos [cite: 12]</strong></p>
+<ul>
+    [cite_start]<li>Utilização de instrumentos diversificados ao longo do trimestre. [cite: 13]</li>
+    [cite_start]<li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento. [cite: 14]</li>
+    [cite_start]<li>Comunicação prévia aos alunos sobre critérios e formatos. [cite: 15]</li>
+</ul>
+[cite_start]<p><strong>Critérios de correção [cite: 16]</strong></p>
+<ul>
+    [cite_start]<li>Correção baseada nos objetivos de aprendizagem. [cite: 17]</li>
+    [cite_start]<li>Devolutivas claras, indicando avanços e aspectos a desenvolver. [cite: 18]</li>
+    [cite_start]<li>Coerência entre desempenho apresentado e resultado atribuído. [cite: 19]</li>
+</ul>
+
+<h4>3. [cite_start]Recuperação da aprendizagem [cite: 20]</h4>
+<ul>
+    [cite_start]<li>A recuperação deve ocorrer de forma contínua ao longo do trimestre. [cite: 21]</li>
+    [cite_start]<li>As estratégias de recuperação devem ser planejadas e registradas. [cite: 22]</li>
+    [cite_start]<li>A recuperação não se limita a um momento final, mas integra o processo de ensino. [cite: 23]</li>
+</ul>
+
+<h4>4. [cite_start]Pareceres e registros pedagógicos [cite: 24]</h4>
+<ul>
+    [cite_start]<li>Linguagem objetiva, clara e pedagógica. [cite: 25]</li>
+    [cite_start]<li>Coerência entre registros, acompanhamento realizado e parecer final. [cite: 26]</li>
+    [cite_start]<li>Registro das ações de recuperação e orientações dadas ao aluno. [cite: 27]</li>
+</ul>
+
+<h4>5. [cite_start]Gestão de sala de aula [cite: 28]</h4>
+<ul>
+    [cite_start]<li>Organização do ambiente de aprendizagem. [cite: 29]</li>
+    [cite_start]<li>Estabelecimento de combinados claros com os alunos. [cite: 30]</li>
+    [cite_start]<li>Intervenções diante de resistência, falta de foco ou descumprimento de regras. [cite: 31]</li>
+    [cite_start]<li>Acionamento da Orientação sempre que necessário. [cite: 32]</li>
+</ul>
+
+<h4>6. [cite_start]Inclusão e atendimento a alunos com dificuldades de aprendizagem [cite: 33]</h4>
+<ul>
+    [cite_start]<li>Planejamento antecipado de adaptações pedagógicas. [cite: 34]</li>
+    [cite_start]<li>Provas e atividades adaptadas conforme as necessidades do aluno. [cite: 35]</li>
+    [cite_start]<li>Comunicação constante com a coordenação sobre o acompanhamento realizado. [cite: 36]</li>
+</ul>
+
+<h4>7. [cite_start]Trabalho em equipe [cite: 37]</h4>
+<ul>
+    [cite_start]<li>Participação nos momentos de alinhamento pedagógico. [cite: 38]</li>
+    [cite_start]<li>Compartilhamento de práticas e estratégias. [cite: 39]</li>
+    [cite_start]<li>Compromisso com as decisões institucionais. [cite: 40]</li>
+</ul>
+
+[cite_start]<h4>Considerações finais [cite: 41]</h4>
+[cite_start]<p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias. [cite: 42]</p>
+                    </div>
             </div>
+
             <div id="ef2-va" class="tab-content">
-                <p><strong>Diretrizes sobre VA - Ensino Fundamental Anos Finais:</strong></p>
-                <ul>
-                    <li>[Informações sobre a VA]</li>
-                </ul>
+                <p><strong>Diretrizes sobre VA:</strong></p>
+                <ul><li>[Informações sobre a VA]</li></ul>
             </div>
             <div id="ef2-prova" class="tab-content">
-                <p><strong>Diretrizes sobre Prova - Ensino Fundamental Anos Finais:</strong></p>
-                <ul>
-                    <li>[Informações sobre provas e avaliações]</li>
-                </ul>
+                <p><strong>Diretrizes sobre Prova:</strong></p>
+                <ul><li>[Informações sobre provas]</li></ul>
             </div>
             <div id="ef2-recuperacao" class="tab-content">
-                <p><strong>Diretrizes sobre Recuperação - Ensino Fundamental Anos Finais:</strong></p>
-                <ul>
-                    <li>[Regras e procedimentos para recuperação]</li>
-                </ul>
+                <p><strong>Diretrizes sobre Recuperação:</strong></p>
+                <ul><li>[Regras de recuperação]</li></ul>
             </div>
-            <div id="ef2-serie" class="tab-content">
-                <p><strong>Download de Arquivos de Orientação (Fundamental Anos Finais):</strong></p>
-                <ul>
-                    <li><a href="[LINK_PDF_6_ANO]" target="_blank">6º Ano - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_7_ANO]" target="_blank">7º Ano - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_8_ANO]" target="_blank">8º Ano - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_9_ANO]" target="_blank">9º Ano - Clique para baixar o PDF</a></li>
-                </ul>
+            <div id="ef2-arquivos" class="tab-content">
+                <p><strong>Download de Arquivos:</strong></p>
+                <ul><li><a href="[LINK]" target="_blank">6º Ano - Baixar PDF</a></li></ul>
             </div>
-            <div id="ef2-saida" class="tab-content">
-                <p><strong>Informações para Saídas Pedagógicas - Ensino Fundamental Anos Finais:</strong></p>
-                <ul>
-                    <li><a href="[LINK_PDF_VIAGEM_HISTORICA]" target="_blank">Viagem de Estudo Histórico (Setembro) - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_LAB_UNIVERSIDADE]" target="_blank">Visita ao Laboratório de Universidade (Novembro) - Clique para baixar o PDF</a></li>
-                </ul>
+            <div id="ef2-saidas" class="tab-content">
+                <p><strong>Saídas Pedagógicas:</strong></p>
+                <ul><li><a href="[LINK]" target="_blank">Viagem de Estudo Histórico</a></li></ul>
             </div>
             <a href="timeline.html" class="timeline-button">Linha do Tempo</a>
         </div>
@@ -348,54 +521,105 @@
         <button class="accordion">Ensino Médio</button>
         <div class="panel">
             <div class="tab-container">
-                <div class="tab-button active" onclick="openTab(event, 'ei-calendario')">Diretrizes 2026</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-va')">VA</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-prova')">Prova</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-recuperacao')">Recuperação</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-art')">ART</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-final')">Recuperação Final</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-laudos')">Laudos</div>
+                <div class="tab-button active" onclick="openTab(event, 'em-diretriz')">Diretriz</div>
+                <div class="tab-button" onclick="openTab(event, 'em-va')">VA</div>
+                <div class="tab-button" onclick="openTab(event, 'em-prova')">Prova</div>
+                <div class="tab-button" onclick="openTab(event, 'em-recuperacao')">Recuperação</div>
+                <div class="tab-button" onclick="openTab(event, 'em-arquivos')">Arquivos</div>
+                <div class="tab-button" onclick="openTab(event, 'em-saidas')">Saídas</div>
             </div>
-            <div id="em-calendario" class="tab-content active">
-                <p><strong>Calendário Anual - Ensino Médio:</strong></p>
-                <ul>
-                    <li>Início das aulas: [Data]</li>
-                    <li>Recesso de meio de ano: [Data]</li>
-                    <li>Fim do ano letivo: [Data]</li>
-                </ul>
+            
+            <div id="em-diretriz" class="tab-content active">
+                 <div class="texto-longo">
+                    [cite_start]<h3>Guia Pedagógico aos Professores – 2026 [cite: 1]</h3>
+[cite_start]<p><strong>Documento orientador de práticas pedagógicas [cite: 2]</strong></p>
+
+[cite_start]<h4>Apresentação [cite: 3]</h4>
+[cite_start]<p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais. [cite: 4]</p>
+<p>Este documento não substitui o regimento escolar. [cite_start]Ele o complementa no cotidiano pedagógico. [cite: 5]</p>
+
+<h4>1. [cite_start]Princípios do trabalho pedagógico em 2026 [cite: 6]</h4>
+<ul>
+    [cite_start]<li>Clareza de critérios e expectativas. [cite: 7]</li>
+    [cite_start]<li>Coerência entre planejamento, avaliação e devolutiva ao aluno. [cite: 8]</li>
+    [cite_start]<li>Registro pedagógico como parte do trabalho docente. [cite: 9]</li>
+    [cite_start]<li>Atuação conjunta entre professores e coordenação. [cite: 10]</li>
+</ul>
+
+<h4>2. [cite_start]Avaliação da aprendizagem [cite: 11]</h4>
+[cite_start]<p><strong>Instrumentos avaliativos [cite: 12]</strong></p>
+<ul>
+    [cite_start]<li>Utilização de instrumentos diversificados ao longo do trimestre. [cite: 13]</li>
+    [cite_start]<li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento. [cite: 14]</li>
+    [cite_start]<li>Comunicação prévia aos alunos sobre critérios e formatos. [cite: 15]</li>
+</ul>
+[cite_start]<p><strong>Critérios de correção [cite: 16]</strong></p>
+<ul>
+    [cite_start]<li>Correção baseada nos objetivos de aprendizagem. [cite: 17]</li>
+    [cite_start]<li>Devolutivas claras, indicando avanços e aspectos a desenvolver. [cite: 18]</li>
+    [cite_start]<li>Coerência entre desempenho apresentado e resultado atribuído. [cite: 19]</li>
+</ul>
+
+<h4>3. [cite_start]Recuperação da aprendizagem [cite: 20]</h4>
+<ul>
+    [cite_start]<li>A recuperação deve ocorrer de forma contínua ao longo do trimestre. [cite: 21]</li>
+    [cite_start]<li>As estratégias de recuperação devem ser planejadas e registradas. [cite: 22]</li>
+    [cite_start]<li>A recuperação não se limita a um momento final, mas integra o processo de ensino. [cite: 23]</li>
+</ul>
+
+<h4>4. [cite_start]Pareceres e registros pedagógicos [cite: 24]</h4>
+<ul>
+    [cite_start]<li>Linguagem objetiva, clara e pedagógica. [cite: 25]</li>
+    [cite_start]<li>Coerência entre registros, acompanhamento realizado e parecer final. [cite: 26]</li>
+    [cite_start]<li>Registro das ações de recuperação e orientações dadas ao aluno. [cite: 27]</li>
+</ul>
+
+<h4>5. [cite_start]Gestão de sala de aula [cite: 28]</h4>
+<ul>
+    [cite_start]<li>Organização do ambiente de aprendizagem. [cite: 29]</li>
+    [cite_start]<li>Estabelecimento de combinados claros com os alunos. [cite: 30]</li>
+    [cite_start]<li>Intervenções diante de resistência, falta de foco ou descumprimento de regras. [cite: 31]</li>
+    [cite_start]<li>Acionamento da Orientação sempre que necessário. [cite: 32]</li>
+</ul>
+
+<h4>6. [cite_start]Inclusão e atendimento a alunos com dificuldades de aprendizagem [cite: 33]</h4>
+<ul>
+    [cite_start]<li>Planejamento antecipado de adaptações pedagógicas. [cite: 34]</li>
+    [cite_start]<li>Provas e atividades adaptadas conforme as necessidades do aluno. [cite: 35]</li>
+    [cite_start]<li>Comunicação constante com a coordenação sobre o acompanhamento realizado. [cite: 36]</li>
+</ul>
+
+<h4>7. [cite_start]Trabalho em equipe [cite: 37]</h4>
+<ul>
+    [cite_start]<li>Participação nos momentos de alinhamento pedagógico. [cite: 38]</li>
+    [cite_start]<li>Compartilhamento de práticas e estratégias. [cite: 39]</li>
+    [cite_start]<li>Compromisso com as decisões institucionais. [cite: 40]</li>
+</ul>
+
+[cite_start]<h4>Considerações finais [cite: 41]</h4>
+[cite_start]<p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias. [cite: 42]</p>
+                    </div>
             </div>
+
             <div id="em-va" class="tab-content">
-                <p><strong>Diretrizes sobre VA - Ensino Médio:</strong></p>
-                <ul>
-                    <li>[Informações sobre a VA]</li>
-                </ul>
+                <p><strong>Diretrizes sobre VA:</strong></p>
+                <ul><li>[Informações sobre a VA]</li></ul>
             </div>
             <div id="em-prova" class="tab-content">
-                <p><strong>Diretrizes sobre Prova - Ensino Médio:</strong></p>
-                <ul>
-                    <li>[Informações sobre provas e avaliações]</li>
-                </ul>
+                <p><strong>Diretrizes sobre Prova:</strong></p>
+                <ul><li>[Informações sobre provas]</li></ul>
             </div>
             <div id="em-recuperacao" class="tab-content">
-                <p><strong>Diretrizes sobre Recuperação - Ensino Médio:</strong></p>
-                <ul>
-                    <li>[Regras e procedimentos para recuperação]</li>
-                </ul>
+                <p><strong>Diretrizes sobre Recuperação:</strong></p>
+                <ul><li>[Regras de recuperação]</li></ul>
             </div>
-            <div id="em-serie" class="tab-content">
-                <p><strong>Download de Arquivos de Orientação (Ensino Médio):</strong></p>
-                <ul>
-                    <li><a href="[LINK_PDF_1_SERIE]" target="_blank">1ª Série - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_2_SERIE]" target="_blank">2ª Série - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_3_SERIE]" target="_blank">3ª Série - Clique para baixar o PDF</a></li>
-                </ul>
+            <div id="em-arquivos" class="tab-content">
+                <p><strong>Download de Arquivos:</strong></p>
+                <ul><li><a href="[LINK]" target="_blank">1ª Série - Baixar PDF</a></li></ul>
             </div>
-            <div id="em-saida" class="tab-content">
-                <p><strong>Informações para Saídas Pedagógicas - Ensino Médio:</strong></p>
-                <ul>
-                    <li><a href="[LINK_PDF_FEIRA_PROFISSÕES]" target="_blank">Feira de Profissões e Universidades (Agosto) - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_SIMULADO_EXTERNO]" target="_blank">Participação em Simulado Externo (Outubro) - Clique para baixar o PDF</a></li>
-                </ul>
+            <div id="em-saidas" class="tab-content">
+                <p><strong>Saídas Pedagógicas:</strong></p>
+                <ul><li><a href="[LINK]" target="_blank">Feira de Profissões</a></li></ul>
             </div>
             <a href="timeline.html" class="timeline-button">Linha do Tempo</a>
         </div>
@@ -413,54 +637,58 @@
                 <ul>
                     <li>Feira do Livro 2026: [Data]</li>
                     <li>Clube de Leitura: Reuniões mensais - [Link para Agenda]</li>
-                    <li>Horário: [Datas]</li>
                 </ul>
             </div>
             <div id="cbl-acervo" class="tab-content">
                 <p><strong>Informações Sobre o Material:</strong></p>
                 <ul>
-                    <li><a href="[LINK_PDF_LISTA_NOVAS_AQUISIÇÕES]" target="_blank">Lista de Novas Aquisições (Mês) - Clique para baixar o PDF</a></li>
-                    <li>Links de Acesso: <a href="[LINK_FORMULARIO_SUGESTOES]" target="_blank">Preencher Formulário Online</a></li>
+                    <li><a href="[LINK]" target="_blank">Lista de Novas Aquisições (Mês)</a></li>
                 </ul>
             </div>
             <div id="cbl-regras" class="tab-content">
                 <p><strong>Regras e Políticas do CBL:</strong></p>
                 <ul>
-                    <li><a href="[LINK_PDF_POLITICAS_USO]" target="_blank">Política de Uso da Biblioteca (Empréstimos, Multas) - Clique para baixar o PDF</a></li>
-                    <li><a href="[LINK_PDF_REGULAMENTO_CBL]" target="_blank">Regulamento Interno do Conselho - Clique para baixar o PDF</a></li>
+                    <li><a href="[LINK]" target="_blank">Política de Uso da Biblioteca</a></li>
                 </ul>
             </div>
             
             <a href="timeline.html" class="timeline-button">Linha do Tempo Escolar Geral</a>
         </div>
         
-        
     </div>
 
     <script>
-        // Função para as abas internas (Calendário, VA, Prova, etc.)
+        // Função para as abas internas
         function openTab(evt, tabId) {
             const currentPanel = evt.currentTarget.closest('.panel');
+            
+            // Esconde todos os conteúdos das abas deste painel
             const allTabContent = currentPanel.querySelectorAll('.tab-content');
             allTabContent.forEach(tab => tab.classList.remove('active'));
 
+            // Remove a classe active de todos os botões deste painel
             const allTabButtons = currentPanel.querySelectorAll('.tab-button');
             allTabButtons.forEach(button => button.classList.remove('active'));
 
+            // Ativa a aba clicada
             document.getElementById(tabId).classList.add('active');
             evt.currentTarget.classList.add('active');
+            
+            // 💡 CORREÇÃO IMPORTANTE: Recalcula a altura do Acordeão
+            // Isso impede que textos grandes fiquem cortados ao trocar de aba
+            currentPanel.style.maxHeight = (currentPanel.scrollHeight + 40) + "px";
         }
 
-        // Script para o acordeão (esconder/mostrar seções)
+        // Script para o acordeão
         const accordions = document.querySelectorAll('.accordion');
         accordions.forEach(accordion => {
             accordion.addEventListener('click', function() {
                 this.classList.toggle('active');
                 const panel = this.nextElementSibling;
+                
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
                 } else {
-                    // Adiciona um pouco de padding extra (40px) para garantir que o conteúdo caiba
                     panel.style.maxHeight = (panel.scrollHeight + 40) + "px";
                 }
             });
@@ -468,8 +696,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
