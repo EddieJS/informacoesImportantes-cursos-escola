@@ -61,7 +61,7 @@
             background-color: white;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s ease-out; /* Suavizada a transição */
+            transition: max-height 0.3s ease-out;
             border: 1px solid #ddd;
             border-top: none;
             border-radius: 0 0 5px 5px;
@@ -612,6 +612,7 @@
                 <div class="tab-button" onclick="openTab(event, 'em-recuperacao')">Recuperação</div>
                 <div class="tab-button" onclick="openTab(event, 'em-arquivos')">Arquivos</div>
                 <div class="tab-button" onclick="openTab(event, 'em-saidas')">Saídas</div>
+                <div class="tab-button" onclick="openTab(event, 'em-cronograma')">Cronograma</div>
             </div>
             
             <div id="em-diretriz" class="tab-content active">
@@ -744,7 +745,106 @@
                 <p><strong>Saídas Pedagógicas:</strong></p>
                 <ul><li><a href="[LINK]" target="_blank">Feira de Profissões</a></li></ul>
             </div>
-            <a href="timeline.html" class="timeline-button">Linha do Tempo</a>
+
+            <div id="em-cronograma" class="tab-content">
+                <div class="texto-longo">
+                    <h3>Cronograma Escolar 2026 - Ensino Médio</h3>
+                    <p><strong>Início das Aulas:</strong> 30/01 (1ª série) e 02/02 (2ª e 3ª série)</p>
+
+                    <h4>Janeiro</h4>
+                    <ul>
+                        <li><strong>27/01:</strong> Reunião de Pais (Todos)</li>
+                        <li><strong>28/01:</strong> [Evento] Aulão Inaugural</li>
+                        <li><strong>30/01:</strong> Início do 1º trimestre</li>
+                    </ul>
+
+                    <h4>Fevereiro</h4>
+                    <ul>
+                        <li><strong>02/02:</strong> Início das aulas para 2ª e 3ª série</li>
+                    </ul>
+
+                    <h4>Março</h4>
+                    <ul>
+                        <li><strong>09 a 14/03:</strong> [Evento] Comemorações de aniversário do Colégio</li>
+                    </ul>
+
+                    <h4>Abril</h4>
+                    <ul>
+                        <li><strong>11/04:</strong> [Evento] Sábado Esportivo</li>
+                        <li><strong>13 a 17/04:</strong> Avaliações trimestrais</li>
+                        <li><strong>24/04:</strong> Entrega de notas</li>
+                        <li><strong>25/04:</strong> [Simulado] FUVEST 1ª fase (3ª série)</li>
+                        <li><strong>27 a 30/04:</strong> ART - Avaliação de Reposição/Recuperação Trimestral</li>
+                    </ul>
+
+                    <h4>Maio</h4>
+                    <ul>
+                        <li><strong>04/05:</strong> [Simulado] FUVEST 2ª fase (3ª série)</li>
+                        <li><strong>06/05:</strong> Conselho de Classe</li>
+                        <li><strong>08/05:</strong> Divulgação do Boletim</li>
+                        <li><strong>11/05:</strong> Início do 2º trimestre</li>
+                        <li><strong>19/05:</strong> Reunião de Pais</li>
+                        <li><strong>23/05:</strong> [Evento] Atividade Esportiva</li>
+                        <li><strong>30/05:</strong> [Evento] Drive-thru Solidário (Todos)</li>
+                        <li><strong>30/05:</strong> [Simulado] ENEM 1º dia (1ª e 2ª série)</li>
+                    </ul>
+                    
+                    <h4>Junho</h4>
+                    <ul>
+                        <li><strong>13/06:</strong> [Simulado] ENEM - 2º dia (1ª e 2ª série)</li>
+                        <li><strong>20/06:</strong> [Evento] Soletrando</li>
+                    </ul>
+
+                    <h4>Agosto</h4>
+                    <ul>
+                        <li><strong>15/08:</strong> [Evento] Batista Sempre</li>
+                        <li><strong>19 a 25/08:</strong> Avaliações trimestrais</li>
+                        <li><strong>28/08:</strong> Entrega de notas</li>
+                        <li><strong>29/08:</strong> [Evento] Atividade Esportiva</li>
+                        <li><strong>31/08:</strong> Início da ART - Avaliação de Reposição/Recuperação Trimestral</li>
+                    </ul>
+
+                    <h4>Setembro</h4>
+                    <ul>
+                        <li><strong>01 e 02/09:</strong> Continuação da ART</li>
+                        <li><strong>08/09:</strong> Início do 3º trimestre</li>
+                        <li><strong>08/09:</strong> Conselho de Classe</li>
+                        <li><strong>10/09:</strong> Divulgação do Boletim</li>
+                        <li><strong>12/09:</strong> [Simulado] ENEM - 1º dia (3ª série)</li>
+                        <li><strong>15/09:</strong> Reunião de Pais</li>
+                        <li><strong>19/09:</strong> [Simulado] ENEM - 2º dia (3ª série)</li>
+                        <li><strong>26/09:</strong> [Evento] Feira Cultural</li>
+                    </ul>
+                    
+                    <h4>Outubro</h4>
+                    <ul>
+                        <li><strong>09/10:</strong> [Simulado] ENEM 1º dia (1ª e 2ª série)</li>
+                        <li><strong>14/10:</strong> [Simulado] UNESP - 1º dia (3ª série)</li>
+                        <li><strong>16/10:</strong> [Simulado] UNESP - 2º dia (3ª série)</li>
+                        <li><strong>17/10:</strong> [Simulado] ENEM - 2º dia (1ª e 2ª série)</li>
+                    </ul>
+
+                    <h4>Novembro</h4>
+                    <ul>
+                        <li><strong>14/11:</strong> [Simulado] SAS (1ª e 2ª série)</li>
+                        <li><strong>23 a 27/11:</strong> Avaliações trimestrais</li>
+                        <li><strong>30/11:</strong> Entrega de notas e convocação</li>
+                    </ul>
+
+                    <h4>Dezembro</h4>
+                    <ul>
+                        <li><strong>01 a 03/12:</strong> ART - Avaliação de Reposição/Recuperação Trimestral</li>
+                        <li><strong>04/12:</strong> Conselho de Classe</li>
+                        <li><strong>08/12:</strong> Divulgação do Boletim</li>
+                        <li><strong>08/12:</strong> Término do Ano Letivo</li>
+                        <li><strong>09 a 14/12:</strong> Avaliações de Recuperação Final</li>
+                        <li><strong>15/12:</strong> Conselho de Classe</li>
+                        <li><strong>15/12:</strong> Divulgação das notas e resultados</li>
+                        <li><strong>17/12:</strong> [Evento] Formatura da 3ª série</li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
         
         <button class="accordion">CBL</button>
@@ -797,8 +897,7 @@
             document.getElementById(tabId).classList.add('active');
             evt.currentTarget.classList.add('active');
             
-            // 💡 CORREÇÃO IMPORTANTE: Recalcula a altura do Acordeão
-            // Isso impede que textos grandes fiquem cortados ao trocar de aba
+            // Recalcula a altura do Acordeão
             currentPanel.style.maxHeight = (currentPanel.scrollHeight + 40) + "px";
         }
 
