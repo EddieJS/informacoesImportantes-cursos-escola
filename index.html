@@ -153,6 +153,26 @@
             margin-top: 5px;
             margin-bottom: 10px;
         }
+        
+        /* Estilo extra para os links de documentos ficarem mais bonitos */
+        .doc-link {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            background-color: #f0f8ff;
+            border: 1px solid #cce5ff;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .doc-link:hover {
+            text-decoration: none;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
 
         /* MEDIA QUERY PARA TELAS PEQUENAS (SMARTPHONES) */
         @media (max-width: 600px) {
@@ -205,7 +225,7 @@
                 <div class="tab-button" onclick="openTab(event, 'ei-va')">VA</div>
                 <div class="tab-button" onclick="openTab(event, 'ei-prova')">Prova</div>
                 <div class="tab-button" onclick="openTab(event, 'ei-qualitativa')">Nota Qualitativa</div>
-                <div class="tab-button" onclick="openTab(event, 'ei-art')">ART</div>
+                <div class="tab-button" onclick="openTab(event, 'ei-recuperacao')">Recuperação</div>
                 <div class="tab-button" onclick="openTab(event, 'ei-arquivos')">Arquivos</div>
                 <div class="tab-button" onclick="openTab(event, 'ei-saidas')">Saídas</div>
             </div>
@@ -217,7 +237,6 @@
 
                     <h4>Apresentação</h4>
                     <p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais.</p>
-                    <p>Este documento não substitui o regimento escolar. Ele o complementa no cotidiano pedagógico.</p>
 
                     <h4>1. Princípios do trabalho pedagógico em 2026</h4>
                     <ul>
@@ -234,25 +253,17 @@
                         <li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento.</li>
                         <li>Comunicação prévia aos alunos sobre critérios e formatos.</li>
                     </ul>
-                    <p><strong>Critérios de correção</strong></p>
-                    <ul>
-                        <li>Correção baseada nos objetivos de aprendizagem.</li>
-                        <li>Devolutivas claras, indicando avanços e aspectos a desenvolver.</li>
-                        <li>Coerência entre desempenho apresentado e resultado atribuído.</li>
-                    </ul>
 
                     <h4>3. Recuperação da aprendizagem</h4>
                     <ul>
                         <li>A recuperação deve ocorrer de forma contínua ao longo do trimestre.</li>
                         <li>As estratégias de recuperação devem ser planejadas e registradas.</li>
-                        <li>A recuperação não se limita a um momento final, mas integra o processo de ensino.</li>
                     </ul>
 
                     <h4>4. Pareceres e registros pedagógicos</h4>
                     <ul>
                         <li>Linguagem objetiva, clara e pedagógica.</li>
                         <li>Coerência entre registros, acompanhamento realizado e parecer final.</li>
-                        <li>Registro das ações de recuperação e orientações dadas ao aluno.</li>
                     </ul>
 
                     <h4>5. Gestão de sala de aula</h4>
@@ -260,25 +271,19 @@
                         <li>Organização do ambiente de aprendizagem.</li>
                         <li>Estabelecimento de combinados claros com os alunos.</li>
                         <li>Intervenções diante de resistência, falta de foco ou descumprimento de regras.</li>
-                        <li>Acionamento da Orientação sempre que necessário.</li>
                     </ul>
 
                     <h4>6. Inclusão e atendimento a alunos com dificuldades de aprendizagem</h4>
                     <ul>
                         <li>Planejamento antecipado de adaptações pedagógicas.</li>
                         <li>Provas e atividades adaptadas conforme as necessidades do aluno.</li>
-                        <li>Comunicação constante com a coordenação sobre o acompanhamento realizado.</li>
                     </ul>
 
                     <h4>7. Trabalho em equipe</h4>
                     <ul>
                         <li>Participação nos momentos de alinhamento pedagógico.</li>
                         <li>Compartilhamento de práticas e estratégias.</li>
-                        <li>Compromisso com as decisões institucionais.</li>
                     </ul>
-
-                    <h4>Considerações finais</h4>
-                    <p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias.</p>
                 </div>
             </div>
 
@@ -315,13 +320,24 @@
                     <li>[Regras e procedimentos para recuperação]</li>
                 </ul>
             </div>
+            
             <div id="ei-arquivos" class="tab-content">
-                <p><strong>Download de Arquivos de Orientação:</strong></p>
-                <ul>
-                    <li><a href="[LINK]" target="_blank">Maternal I - Baixar PDF</a></li>
-                    <li><a href="[LINK]" target="_blank">Infantil I - Baixar PDF</a></li>
-                </ul>
+                <div class="texto-longo">
+                    <h3>Documentos Gerais</h3>
+                    <ul>
+                        <li><a href="Avaliacoes_professor.pdf" download class="doc-link">📥 Baixar: Orientações - Avaliações Professor (PDF)</a></li>
+                        <li><a href="Avaliacoes_Arquivos_VA_Links.pdf" download class="doc-link">📥 Baixar: Modelos e Links - Arquivos de VA (PDF)</a></li>
+                        <li><a href="Inclusao_2026_versao_3.pdf" download class="doc-link">📥 Baixar: Programa de Inclusão 2026 (PDF)</a></li>
+                    </ul>
+                    <hr>
+                    <p><strong>Outros Arquivos de Orientação:</strong></p>
+                    <ul>
+                        <li><a href="[LINK]" download class="doc-link">📥 Baixar: Maternal I (PDF)</a></li>
+                        <li><a href="[LINK]" download class="doc-link">📥 Baixar: Infantil I (PDF)</a></li>
+                    </ul>
+                </div>
             </div>
+            
             <div id="ei-saidas" class="tab-content">
                 <p><strong>Saídas Pedagógicas:</strong></p>
                 <ul>
@@ -338,7 +354,7 @@
                 <div class="tab-button" onclick="openTab(event, 'ef1-va')">VA</div>
                 <div class="tab-button" onclick="openTab(event, 'ef1-prova')">Prova</div>
                 <div class="tab-button" onclick="openTab(event, 'ef1-qualitativa')">Nota Qualitativa</div>
-                <div class="tab-button" onclick="openTab(event, 'ef1-art')">ART</div>
+                <div class="tab-button" onclick="openTab(event, 'ef1-recuperacao')">Recuperação</div>
                 <div class="tab-button" onclick="openTab(event, 'ef1-arquivos')">Arquivos</div>
                 <div class="tab-button" onclick="openTab(event, 'ef1-saidas')">Saídas</div>
                 <div class="tab-button" onclick="openTab(event, 'ef1-cronograma')">Cronograma</div>
@@ -351,7 +367,6 @@
 
                     <h4>Apresentação</h4>
                     <p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais.</p>
-                    <p>Este documento não substitui o regimento escolar. Ele o complementa no cotidiano pedagógico.</p>
 
                     <h4>1. Princípios do trabalho pedagógico em 2026</h4>
                     <ul>
@@ -368,25 +383,17 @@
                         <li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento.</li>
                         <li>Comunicação prévia aos alunos sobre critérios e formatos.</li>
                     </ul>
-                    <p><strong>Critérios de correção</strong></p>
-                    <ul>
-                        <li>Correção baseada nos objetivos de aprendizagem.</li>
-                        <li>Devolutivas claras, indicando avanços e aspectos a desenvolver.</li>
-                        <li>Coerência entre desempenho apresentado e resultado atribuído.</li>
-                    </ul>
 
                     <h4>3. Recuperação da aprendizagem</h4>
                     <ul>
                         <li>A recuperação deve ocorrer de forma contínua ao longo do trimestre.</li>
                         <li>As estratégias de recuperação devem ser planejadas e registradas.</li>
-                        <li>A recuperação não se limita a um momento final, mas integra o processo de ensino.</li>
                     </ul>
 
                     <h4>4. Pareceres e registros pedagógicos</h4>
                     <ul>
                         <li>Linguagem objetiva, clara e pedagógica.</li>
                         <li>Coerência entre registros, acompanhamento realizado e parecer final.</li>
-                        <li>Registro das ações de recuperação e orientações dadas ao aluno.</li>
                     </ul>
 
                     <h4>5. Gestão de sala de aula</h4>
@@ -394,25 +401,19 @@
                         <li>Organização do ambiente de aprendizagem.</li>
                         <li>Estabelecimento de combinados claros com os alunos.</li>
                         <li>Intervenções diante de resistência, falta de foco ou descumprimento de regras.</li>
-                        <li>Acionamento da Orientação sempre que necessário.</li>
                     </ul>
 
                     <h4>6. Inclusão e atendimento a alunos com dificuldades de aprendizagem</h4>
                     <ul>
                         <li>Planejamento antecipado de adaptações pedagógicas.</li>
                         <li>Provas e atividades adaptadas conforme as necessidades do aluno.</li>
-                        <li>Comunicação constante com a coordenação sobre o acompanhamento realizado.</li>
                     </ul>
 
                     <h4>7. Trabalho em equipe</h4>
                     <ul>
                         <li>Participação nos momentos de alinhamento pedagógico.</li>
                         <li>Compartilhamento de práticas e estratégias.</li>
-                        <li>Compromisso com as decisões institucionais.</li>
                     </ul>
-
-                    <h4>Considerações finais</h4>
-                    <p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias.</p>
                 </div>
             </div>
 
@@ -480,10 +481,21 @@
                 <p><strong>Diretrizes sobre Recuperação:</strong></p>
                 <ul><li>[Regras de recuperação]</li></ul>
             </div>
+            
             <div id="ef1-arquivos" class="tab-content">
-                <p><strong>Download de Arquivos:</strong></p>
-                <ul><li><a href="[LINK]" target="_blank">1º Ano - Baixar PDF</a></li></ul>
+                <div class="texto-longo">
+                    <h3>Documentos Gerais</h3>
+                    <ul>
+                        <li><a href="Avaliacoes_professor.pdf" download class="doc-link">📥 Baixar: Orientações - Avaliações Professor (PDF)</a></li>
+                        <li><a href="Avaliacoes_Arquivos_VA_Links.pdf" download class="doc-link">📥 Baixar: Modelos e Links - Arquivos de VA (PDF)</a></li>
+                        <li><a href="Inclusao_2026_versao_3.pdf" download class="doc-link">📥 Baixar: Programa de Inclusão 2026 (PDF)</a></li>
+                    </ul>
+                    <hr>
+                    <p><strong>Download de Arquivos Específicos:</strong></p>
+                    <ul><li><a href="[LINK]" download class="doc-link">📥 Baixar: 1º Ano (PDF)</a></li></ul>
+                </div>
             </div>
+
             <div id="ef1-saidas" class="tab-content">
                 <p><strong>Saídas Pedagógicas:</strong></p>
                 <ul><li><a href="[LINK]" target="_blank">Museu de Ciências</a></li></ul>
@@ -590,7 +602,7 @@
                 <div class="tab-button" onclick="openTab(event, 'ef2-va')">VA</div>
                 <div class="tab-button" onclick="openTab(event, 'ef2-prova')">Prova</div>
                 <div class="tab-button" onclick="openTab(event, 'ef2-qualitativa')">Nota Qualitativa</div>
-                <div class="tab-button" onclick="openTab(event, 'ef2-art')">ART</div>
+                <div class="tab-button" onclick="openTab(event, 'ef2-recuperacao')">Recuperação</div>
                 <div class="tab-button" onclick="openTab(event, 'ef2-arquivos')">Arquivos</div>
                 <div class="tab-button" onclick="openTab(event, 'ef2-saidas')">Saídas</div>
                 <div class="tab-button" onclick="openTab(event, 'ef2-cronograma')">Cronograma</div>
@@ -603,7 +615,6 @@
 
                     <h4>Apresentação</h4>
                     <p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais.</p>
-                    <p>Este documento não substitui o regimento escolar. Ele o complementa no cotidiano pedagógico.</p>
 
                     <h4>1. Princípios do trabalho pedagógico em 2026</h4>
                     <ul>
@@ -620,25 +631,17 @@
                         <li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento.</li>
                         <li>Comunicação prévia aos alunos sobre critérios e formatos.</li>
                     </ul>
-                    <p><strong>Critérios de correção</strong></p>
-                    <ul>
-                        <li>Correção baseada nos objetivos de aprendizagem.</li>
-                        <li>Devolutivas claras, indicando avanços e aspectos a desenvolver.</li>
-                        <li>Coerência entre desempenho apresentado e resultado atribuído.</li>
-                    </ul>
 
                     <h4>3. Recuperação da aprendizagem</h4>
                     <ul>
                         <li>A recuperação deve ocorrer de forma contínua ao longo do trimestre.</li>
                         <li>As estratégias de recuperação devem ser planejadas e registradas.</li>
-                        <li>A recuperação não se limita a um momento final, mas integra o processo de ensino.</li>
                     </ul>
 
                     <h4>4. Pareceres e registros pedagógicos</h4>
                     <ul>
                         <li>Linguagem objetiva, clara e pedagógica.</li>
                         <li>Coerência entre registros, acompanhamento realizado e parecer final.</li>
-                        <li>Registro das ações de recuperação e orientações dadas ao aluno.</li>
                     </ul>
 
                     <h4>5. Gestão de sala de aula</h4>
@@ -646,25 +649,19 @@
                         <li>Organização do ambiente de aprendizagem.</li>
                         <li>Estabelecimento de combinados claros com os alunos.</li>
                         <li>Intervenções diante de resistência, falta de foco ou descumprimento de regras.</li>
-                        <li>Acionamento da Orientação sempre que necessário.</li>
                     </ul>
 
                     <h4>6. Inclusão e atendimento a alunos com dificuldades de aprendizagem</h4>
                     <ul>
                         <li>Planejamento antecipado de adaptações pedagógicas.</li>
                         <li>Provas e atividades adaptadas conforme as necessidades do aluno.</li>
-                        <li>Comunicação constante com a coordenação sobre o acompanhamento realizado.</li>
                     </ul>
 
                     <h4>7. Trabalho em equipe</h4>
                     <ul>
                         <li>Participação nos momentos de alinhamento pedagógico.</li>
                         <li>Compartilhamento de práticas e estratégias.</li>
-                        <li>Compromisso com as decisões institucionais.</li>
                     </ul>
-
-                    <h4>Considerações finais</h4>
-                    <p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias.</p>
                 </div>
             </div>
 
@@ -732,10 +729,21 @@
                 <p><strong>Diretrizes sobre Recuperação:</strong></p>
                 <ul><li>[Regras de recuperação]</li></ul>
             </div>
+            
             <div id="ef2-arquivos" class="tab-content">
-                <p><strong>Download de Arquivos:</strong></p>
-                <ul><li><a href="[LINK]" target="_blank">6º Ano - Baixar PDF</a></li></ul>
+                <div class="texto-longo">
+                    <h3>Documentos Gerais</h3>
+                    <ul>
+                        <li><a href="Avaliacoes_professor.pdf" download class="doc-link">📥 Baixar: Orientações - Avaliações Professor (PDF)</a></li>
+                        <li><a href="Avaliacoes_Arquivos_VA_Links.pdf" download class="doc-link">📥 Baixar: Modelos e Links - Arquivos de VA (PDF)</a></li>
+                        <li><a href="Inclusao_2026_versao_3.pdf" download class="doc-link">📥 Baixar: Programa de Inclusão 2026 (PDF)</a></li>
+                    </ul>
+                    <hr>
+                    <p><strong>Download de Arquivos Específicos:</strong></p>
+                    <ul><li><a href="[LINK]" download class="doc-link">📥 Baixar: 6º Ano (PDF)</a></li></ul>
+                </div>
             </div>
+
             <div id="ef2-saidas" class="tab-content">
                 <p><strong>Saídas Pedagógicas:</strong></p>
                 <ul><li><a href="[LINK]" target="_blank">Viagem de Estudo Histórico</a></li></ul>
@@ -843,7 +851,7 @@
                 <div class="tab-button" onclick="openTab(event, 'em-va')">VA</div>
                 <div class="tab-button" onclick="openTab(event, 'em-prova')">Prova</div>
                 <div class="tab-button" onclick="openTab(event, 'em-qualitativa')">Nota Qualitativa</div>
-                <div class="tab-button" onclick="openTab(event, 'em-art')">ART</div>
+                <div class="tab-button" onclick="openTab(event, 'em-recuperacao')">Recuperação</div>
                 <div class="tab-button" onclick="openTab(event, 'em-arquivos')">Arquivos</div>
                 <div class="tab-button" onclick="openTab(event, 'em-saidas')">Saídas</div>
                 <div class="tab-button" onclick="openTab(event, 'em-cronograma')">Cronograma</div>
@@ -856,7 +864,6 @@
 
                     <h4>Apresentação</h4>
                     <p>Este guia foi elaborado para apoiar o trabalho docente ao longo do ano letivo de 2026. Seu objetivo é oferecer orientações claras e práticas para o planejamento, a avaliação da aprendizagem, a recuperação, a gestão de sala de aula e o atendimento aos alunos, em consonância com o regimento escolar e as diretrizes institucionais.</p>
-                    <p>Este documento não substitui o regimento escolar. Ele o complementa no cotidiano pedagógico.</p>
 
                     <h4>1. Princípios do trabalho pedagógico em 2026</h4>
                     <ul>
@@ -873,25 +880,17 @@
                         <li>Avaliação alinhada aos conteúdos e objetivos previstos no planejamento.</li>
                         <li>Comunicação prévia aos alunos sobre critérios e formatos.</li>
                     </ul>
-                    <p><strong>Critérios de correção</strong></p>
-                    <ul>
-                        <li>Correção baseada nos objetivos de aprendizagem.</li>
-                        <li>Devolutivas claras, indicando avanços e aspectos a desenvolver.</li>
-                        <li>Coerência entre desempenho apresentado e resultado atribuído.</li>
-                    </ul>
 
                     <h4>3. Recuperação da aprendizagem</h4>
                     <ul>
                         <li>A recuperação deve ocorrer de forma contínua ao longo do trimestre.</li>
                         <li>As estratégias de recuperação devem ser planejadas e registradas.</li>
-                        <li>A recuperação não se limita a um momento final, mas integra o processo de ensino.</li>
                     </ul>
 
                     <h4>4. Pareceres e registros pedagógicos</h4>
                     <ul>
                         <li>Linguagem objetiva, clara e pedagógica.</li>
                         <li>Coerência entre registros, acompanhamento realizado e parecer final.</li>
-                        <li>Registro das ações de recuperação e orientações dadas ao aluno.</li>
                     </ul>
 
                     <h4>5. Gestão de sala de aula</h4>
@@ -899,25 +898,19 @@
                         <li>Organização do ambiente de aprendizagem.</li>
                         <li>Estabelecimento de combinados claros com os alunos.</li>
                         <li>Intervenções diante de resistência, falta de foco ou descumprimento de regras.</li>
-                        <li>Acionamento da Orientação sempre que necessário.</li>
                     </ul>
 
                     <h4>6. Inclusão e atendimento a alunos com dificuldades de aprendizagem</h4>
                     <ul>
                         <li>Planejamento antecipado de adaptações pedagógicas.</li>
                         <li>Provas e atividades adaptadas conforme as necessidades do aluno.</li>
-                        <li>Comunicação constante com a coordenação sobre o acompanhamento realizado.</li>
                     </ul>
 
                     <h4>7. Trabalho em equipe</h4>
                     <ul>
                         <li>Participação nos momentos de alinhamento pedagógico.</li>
                         <li>Compartilhamento de práticas e estratégias.</li>
-                        <li>Compromisso com as decisões institucionais.</li>
                     </ul>
-
-                    <h4>Considerações finais</h4>
-                    <p>O trabalho pedagógico em 2026 exige compromisso com processos claros, registro responsável e atuação colaborativa, garantindo segurança pedagógica para professores, alunos e famílias.</p>
                 </div>
             </div>
 
@@ -985,10 +978,21 @@
                 <p><strong>Diretrizes sobre Recuperação:</strong></p>
                 <ul><li>[Regras de recuperação]</li></ul>
             </div>
+            
             <div id="em-arquivos" class="tab-content">
-                <p><strong>Download de Arquivos:</strong></p>
-                <ul><li><a href="[LINK]" target="_blank">1ª Série - Baixar PDF</a></li></ul>
+                <div class="texto-longo">
+                    <h3>Documentos Gerais</h3>
+                    <ul>
+                        <li><a href="Avaliacoes_professor.pdf" download class="doc-link">📥 Baixar: Orientações - Avaliações Professor (PDF)</a></li>
+                        <li><a href="Avaliacoes_Arquivos_VA_Links.pdf" download class="doc-link">📥 Baixar: Modelos e Links - Arquivos de VA (PDF)</a></li>
+                        <li><a href="Inclusao_2026_versao_3.pdf" download class="doc-link">📥 Baixar: Programa de Inclusão 2026 (PDF)</a></li>
+                    </ul>
+                    <hr>
+                    <p><strong>Download de Arquivos Específicos:</strong></p>
+                    <ul><li><a href="[LINK]" download class="doc-link">📥 Baixar: 1ª Série (PDF)</a></li></ul>
+                </div>
             </div>
+
             <div id="em-saidas" class="tab-content">
                 <p><strong>Saídas Pedagógicas:</strong></p>
                 <ul><li><a href="[LINK]" target="_blank">Feira de Profissões</a></li></ul>
@@ -1100,7 +1104,7 @@
             <div class="tab-container">
                 <div class="tab-button active" onclick="openTab(event, 'cbl-calendario')">Calendário de Eventos</div>
                 <div class="tab-button" onclick="openTab(event, 'cbl-acervo')">Informações Sobre Materiais</div>
-                <div class="tab-button" onclick="openTab(event, 'cbl-exames')">Exames de Cambridge</div>
+                <div class="tab-button" onclick="openTab(event, 'cbl-regras')">Regras e Políticas</div>
             </div>
 
             <div id="cbl-calendario" class="tab-content active">
@@ -1116,10 +1120,10 @@
                     <li><a href="[LINK]" target="_blank">Lista de Novas Aquisições (Mês)</a></li>
                 </ul>
             </div>
-            <div id="cbl-exames" class="tab-content">
-                <p><strong>Datas dos Exames:</strong></p>
+            <div id="cbl-regras" class="tab-content">
+                <p><strong>Regras e Políticas do CBL:</strong></p>
                 <ul>
-                    <li><a href="[LINK]" target="_blank">Clique aqui para mais informações</a></li>
+                    <li><a href="[LINK]" target="_blank">Política de Uso da Biblioteca</a></li>
                 </ul>
             </div>
             
@@ -1166,4 +1170,3 @@
     </script>
 </body>
 </html>
-
